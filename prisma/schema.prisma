@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Assessment {
+  id        String  @id @default(uuid())
+  name      String
+  disorder  String
+  content   Content @relation(fields: [contentId], references: [id])
+  contentId String
+  full_name String
+}
+
+model Content {
+  id           String       @id @default(uuid())
+  sections     Section[]
+  display_name String
+  Assessment   Assessment[]
+}
+
+model Section {
+  id        String     @id @default(uuid())
+  type      String
+  title     String
+  answers   Answer[]
+  questions Question[]
+  content   Content    @relation(fields: [contentId], references: [id])
+  contentId String
+}
+
+model Answer {
+  id        String  @id @default(uuid())
+  title     String
+  value     Int
+  section   Section @relation(fields: [sectionId], references: [id])
+  sectionId String
+}
+
+model Question {
+  id          String  @id @default(uuid())
+  question_id String
+  title       String
+  section     Section @relation(fields: [sectionId], references: [id])
+  sectionId   String
+}
+
+model QuestionDomain {
+  id       String @id @default(uuid())
+  question String @unique
+  domain   String
+}
+
+model Level2Assessment {
+  id         String @id @default(uuid())
+  domain     String @unique
+  score      Int
+  assessment String
+}
