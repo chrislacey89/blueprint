@@ -1,5 +1,7 @@
 # **Assessment Form Application**
 
+Chris Lacey https://www.linkedin.com/in/chrislacey89/
+
 This is a full stack application built with Next.js, React, and Prisma. It fetches assessment questions from a PostgreSQL database using Prisma ORM, displays them to the user, allows the user to respond, and then calculates and displays the assessment results.
 
 The project is hosted at [https://blueprint-swart.vercel.app/](https://blueprint-swart.vercel.app/).
@@ -37,11 +39,11 @@ A full stack approach to generating dynamic, personalized assessments, managing 
 
 ## Solution Description:
 
-This solution provides an, intuitive interface that displays each question and corresponding options one at a time, tracking the user's progress throughout the assessment.
+This solution provides an intuitive interface that displays each question and corresponding options one at a time, tracking the user's progress throughout the assessment.
 
 Upon completion, the user's responses are posted back to the API, which calculates the score based on a predefined mapping of questions to domains and domain scores to assessments.
 
-Key functionalities of DynamicAssessment include:
+Key functionalities of the app include:
 
 1. **Dynamic Assessment Rendering**: The application fetches an assessment from the server, including the sections, questions, and possible answers. This information is used to dynamically generate an interactive assessment form.
 2. **Progress Tracking**: The application keeps track of the current question and displays a progress bar, showing users how far they've progressed in the assessment.
@@ -114,6 +116,6 @@ Due to time constraints, there were a few items left out that could improve the 
 
 If given more time, here's what could be improved:
 
-1. **User Interface**: The UI could be made more engaging and responsive. User experience could be improved with more interactive elements and feedback.
+1. **User Interface**: The UI could be made more engaging and dynamic. User experience could be improved with more interactive elements and feedback.
 2. **Feature Completeness**: More features could be added, such as user authentication, personalized recommendations, etc.
 3. **Accessibility**: More focus could be given to making the application accessible to all users, following ARIA standards.
