@@ -140,7 +140,7 @@ async function main () {
   const level2AssessmentMapping = {
     depression: { score: 2, assessment: 'PHQ-9' },
     mania: { score: 2, assessment: 'ASRM' },
-    anxiety: { score: 2, assessment: 'GAD-7' },
+    anxiety: { score: 2, assessment: 'PHQ-9' },
     substance_use: { score: 1, assessment: 'ASSIST' }
   }
 

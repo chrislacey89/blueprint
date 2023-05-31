@@ -123,8 +123,8 @@ export default function FormDisplay ({
             Back
           </button>
 
-          {questionNumber === section.questions.length &&
-            (
+          {questionNumber === section.questions.length
+            ? (
             <button
               disabled={isSubmitting || missingResponses}
               onClick={() => submitForm(responses)}
@@ -132,7 +132,16 @@ export default function FormDisplay ({
               className="btn btn-success">
               Submit
             </button>
-            )
+              )
+            : (
+            <button
+              onClick={nextQuestion}
+              type="button"
+              className="btn btn-primary">
+              Next
+            </button>
+              )
+
             }
         </div>
       </form>
