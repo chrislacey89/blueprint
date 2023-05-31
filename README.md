@@ -1,6 +1,6 @@
 # **Assessment Form Application**
 
-This project is a part of a take-home interview assignment. It's a full stack application built with Next.js, React and Prisma. It fetches assessment questions from a PostgreSQL database using Prisma ORM, displays them to the user, allows the user to respond, and then calculates and displays the assessment results.
+This is a full stack application built with Next.js, React, and Prisma. It fetches assessment questions from a PostgreSQL database using Prisma ORM, displays them to the user, allows the user to respond, and then calculates and displays the assessment results.
 
 The project is hosted at [https://blueprint-swart.vercel.app/](https://blueprint-swart.vercel.app/).
 
@@ -21,9 +21,9 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine.
 2. Install the dependencies by running **`npm install`**, **`yarn install`**, or`pnpm install`.
 3. Set up the database:
-    - Install PostgreSQL and create a new database.
-    - Update the **`DATABASE_URL`** in your .env file.
-    - Run **`npx prisma migrate dev`** to run the migrations.
+   - Install PostgreSQL and create a new database.
+   - Update the **`DATABASE_URL`** in your .env file.
+   - Run **`npx prisma migrate dev`** to run the migrations.
 4. Start the Next.js server with **`npm run dev`** or **`yarn dev`**.
 5. Open your browser to **`http://localhost:3000`** to see the application in action.
 
@@ -74,7 +74,7 @@ Tailwind was chosen to style the application. This negates the need for writing 
 
 ### **ESLint**:
 
-ESLint  is used to find and fix problems in the codebase. It helps maintain a consistent coding style, enforces best practices, and reduces potential bugs early in the development process. Using ESLint improves the quality of our codebase and makes code reviews more focused and efficient.
+ESLint is used to find and fix problems in the codebase. It helps maintain a consistent coding style, enforces best practices, and reduces potential bugs early in the development process. Using ESLint improves the quality of our codebase and makes code reviews more focused and efficient.
 
 # **Production Deployment Strategy**
 
