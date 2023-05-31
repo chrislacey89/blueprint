@@ -121,6 +121,10 @@ function calculateResults (
   const results: string[] = []
   for (const domain in scores) {
     if (scores[domain] >= level2AssessmentMapping[domain].score) {
+      // If the assessment is already in the results, skip it
+      if (results.includes(level2AssessmentMapping[domain].assessment)) {
+        continue
+      }
       results.push(level2AssessmentMapping[domain].assessment)
     }
   }
