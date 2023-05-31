@@ -44,7 +44,7 @@ export default function FormDisplay ({
     }
     setQuestionNumber(questionNumber + 1)
   }
-  const VERCEL_URL = '/blueprint-demo-zdg9.vercel.app'
+  const VERCEL_URL = '/blueprint-swart.vercel.app'
   function getBaseUrl () {
     if (typeof window !== 'undefined') return '' // browser should use relative url
     // if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}` // SSR should use vercel url
