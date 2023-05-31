@@ -64,7 +64,13 @@ Prisma is used as the ORM tool to interact with the PostgreSQL database. Prisma 
 
 ### **PostgreSQL**
 
-PostgreSQL is used as the database for this application due to its robustness, ACID compliance, and support for complex SQL queries. It's a powerful open-source relational database that is extensible and standards-compliant.
+PostgreSQL is used as the database for this application due to its robustness,
+ACID compliance, and support for complex SQL queries. It's a powerful
+open-source relational database that is extensible and standards-compliant.
+
+### **Tailwind CSS**
+
+Tailwind was chosen to style the application. This negates the need for writing custom CSS classes, leading to faster styling process and minimal unused CSS in production. The application uses a tailwind style library called daisyUI to save time building a cohesive design system.
 
 ### **ESLint**:
 
