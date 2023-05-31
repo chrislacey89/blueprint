@@ -12,8 +12,8 @@ export default function RadioQuestion ({
   updateResponses
 }: RadioQuestionProps) {
   return (
-    <fieldset className="form-control">
-      <legend>{questionData.prompt}</legend>
+    <fieldset className="prose form-control">
+      <legend><h3>{questionData.prompt}</h3></legend>
 
       {options.map((option) => (
         <div key={option.title}>
