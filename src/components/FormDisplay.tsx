@@ -95,7 +95,7 @@ export default function FormDisplay ({
       <form
         className="prose px-10 py-6 card w-96 bg-base-100 shadow-xl"
        >
-        <h2>{section.title}</h2>
+        <h3>{section.title}</h3>
 
         <div className="flex flex-col">
           <h3>
