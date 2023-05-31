@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 import RadioQuestion from '@/components/RadioQuestion'
-import { AssessmentData, POST as submitAssessment } from '@/app/api/assessment/route'
+import { AssessmentData } from '@/app/api/assessment/route'
 interface FormDisplayProps {
   data: AssessmentData;
 }
@@ -60,7 +60,7 @@ export default function FormDisplay ({
         answers: data
       })
     })
-    // log body's ReadableStream
+
     const formResult = await formRequest.json()
     setFormResults(formResult)
     console.log('formResult:', formResult)
