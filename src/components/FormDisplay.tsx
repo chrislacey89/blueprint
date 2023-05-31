@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 import RadioQuestion from '@/components/RadioQuestion'
-import { AssessmentData } from '@/app/api/assessment/route'
+import { AssessmentData, POST as submitAssessment } from '@/app/api/assessment/route'
 interface FormDisplayProps {
   data: AssessmentData;
 }
@@ -46,9 +46,6 @@ export default function FormDisplay ({
   }
   const VERCEL_URL = '/blueprint-swart.vercel.app'
   function getBaseUrl () {
-    if (typeof window !== 'undefined') return '' // browser should use relative url
-    // if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}` // SSR should use vercel url
-    // if not in dev move use vercel url
     if (process.env.NODE_ENV !== 'development') return `https://${VERCEL_URL}` // SSR should use vercel url
     return `http://localhost:${process.env.PORT ?? 3000}` // dev SSR should use localhost
   }
